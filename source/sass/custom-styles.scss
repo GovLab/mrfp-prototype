@@ -1,13 +1,30 @@
 $dark-gray: #3B4E64;
+$light-gray: #BBC3D1;
 $orange: #F16246;
 $green: #00C5AC;
 $yellow: #ECC600;
 $purple: #AD6DC4;
 
-$main-font: 'Raleway', sans-serif;
+$main-font: 'Montserrat', sans-serif;
 
-$main-color: #389482;
-$accent-color: orange;
+$main-color: $dark-gray;
+$accent-color: $orange;
+
+body {
+  font-family: $main-font;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+
+
+
+
+
 
 .clearfix:after {
    content: " "; /* Older browser do not support empty content */

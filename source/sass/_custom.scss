@@ -1,85 +1,194 @@
-a {
-  color: currentColor;
-  text-decoration: none;
+.app-wrapper {
+  display: flex;
+  flex-direction: column;  
 }
 
-body {
-  letter-spacing: .5px;
-  color: rgba(black, .5);
-  font-family: 'proxima-nova-soft', sans-serif;
-  font-weight: 400;
-  background-color: #FFF;
-  padding: 0;
-  margin: 0;
-}
+.main-header {
+  background-color: $main-color;
+  box-shadow: 2px 2px 4px rgba(black, .1);
+  position: relative;
+  z-index: 100;
+  display: flex;
 
-.small-header {
-
-  h1 {
-    font-size: 16px;
-    text-transform: uppercase;
-    padding-left: 20px;
+  &__logo {
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 1px;
   }
 
-  .top-nav {
-    text-align: right;
-  }
-
-  .button:hover {
-    background-color: $main-color;
+  &__item {
     color: white;
+    padding: 15px 25px;
+    display: inline-block;
+  }
+
+  &__spacer { flex: 1; }
+
+  &__more {
+    &:hover {
+      background-color: rgba(white, .1);
+    }
   }
 }
 
-.controls {
-  position: fixed;
-  left: 35px;
-  top: 90px;
 
-  &__button {
-    box-shadow: 1px 1px 4px rgba(black, .1);
-    background-color: $accent-color;
-    color: rgba(white, .7);
-    border-radius: 50%;
-    cursor: pointer;
-    margin-top: 0;
-    position: static;
+.main-menu {
+  background-color: $yellow;
+  box-shadow: 2px 2px 4px rgba(black, .1);
+  position: relative;
+  z-index: 99;
+
+  a {
+    color: white;
+    padding: 20px;
     display: block;
-    margin-bottom: 10px;
-    font-size: 28px;
+
+    
+    &:hover {
+      background-color: $accent-color;
+    }
+  }
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+}
+
+.states-menu {
+  background-color: $green;
+  overflow-y: scroll;
+  box-shadow: 2px 2px 4px rgba(black, .1);
+  position: relative;
+  z-index: 98;
+
+  &__item {
+    display: block;
+    padding: 15px 15px 15px 20px;
+    color: rgba(white, .8);
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: .4px;
+    border-bottom: 1px solid rgba($dark-gray, .1);
     @extend .u-transition;
 
-    > i {
-      padding: 10px;
-      @extend .u-material-icons;
-    }
-
     &:hover {
-      background-color: $main-color;
-      color: rgba(black, .4);
-      @extend .u-transition;
+      background-color: rgba(black, .1);
+      color: white;
     }
 
-    &:after {
-      content: attr(title);
-      position: absolute;
-      color: $main-color;
-      font-size: 1rem;
-      word-wrap: nowrap;
-      width: 150px;
-      padding: 12px 15px;
-      opacity: 0;
-      margin-left: -50px;
-      @extend .u-transition;
+    > i {
+      float: right;
+      margin-left: 20px;
     }
+  }
+}
 
-    &:hover:after {
-      opacity: 1;
-      margin-left: 0;
-      @extend .u-transition;
+.main-form {
+  flex: 1;
+  overflow-y: scroll;
+  color: $dark-gray;
+  font-weight: 100;
+
+  .row { margin-bottom: 10px; }
+
+  section { 
+    padding-bottom: 20px;
+    
+    hr { 
+      margin-top: 30px;
+      border-top: 1px solid rgba($light-gray, .3); 
     }
   }
 
-  &--with-header { top: 250px; }
-}
+  label { display: inline-block; }
 
+  input,
+  label { 
+    padding: 6px;
+    font-weight: 100;
+    width: 100%; 
+  }
+
+  input,
+  textarea {
+    border: 1px solid rgba($light-gray, .4);
+  }
+
+  textarea {
+    border-radius: 0;
+    width: 100%;
+    padding: 6px;
+  }
+  
+  h1 {
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    em {
+      font-weight: 100;
+      text-transform: none;
+      opacity: .5;
+    }
+  }
+
+  h3 { text-transform: uppercase; }
+  
+  h3 > .select.inline {
+    position: relative;
+
+    &:before {
+      @extend .u-material-icons;
+      content: 'keyboard_arrow_down';
+      position: absolute;
+      right: 0;
+      padding: 8px;
+      pointer-events: none;
+    }
+
+    > select {
+      font-weight: 100;
+      border: 0;
+      color: rgba($dark-gray, .5);
+      border-bottom: 1px solid $light-gray;
+      -webkit-appearance: none;
+      border-radius: 0;
+      padding: 6px 0 6px 6px;
+      font-size: 1.3rem;
+      background-color: transparent;
+    }
+
+  }
+
+  .select {
+    &.inline { display: inline-block; }
+  }
+
+  .add {
+    text-align: center;
+    background-color: rgba($purple, .5);
+    height: 100%;
+    padding: 40px 0 20px;
+    text-transform: uppercase;
+    opacity: .2;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
+
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 100;
+    }
+
+    .material-icons {
+      font-size: 5rem;
+    }
+
+  }
+
+}

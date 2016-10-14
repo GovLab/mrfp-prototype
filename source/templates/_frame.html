@@ -1,0 +1,21 @@
+{% extends '_base.html' %}
+{% block frame %}
+
+  <nav class="main-menu">
+    <a href="#" class="main-menu__item"><i class="material-icons">add_circle_outline</i></a>
+    <a href="#" class="main-menu__item"><i class="material-icons">queue</i></a>
+    <a href="#" class="main-menu__item"><i class="material-icons">settings</i></a>
+    <a href="#" class="main-menu__item"><i class="material-icons">account_circle</i></a>
+  </nav>
+
+  <nav class="states-menu">
+    <a href="#" class="states-menu__item">Federal <i class="material-icons">arrow_forward</i></a>
+    <a href="#" class="states-menu__item">Missouri <i class="material-icons">arrow_forward </i></a>
+    <a href="#" class="states-menu__item">Florida <i class="material-icons">arrow_forward</i></a>
+    <a href="#" class="states-menu__item">Add State <i class="material-icons">add</i></a>
+  </nav>
+
+  <div class="main-form">
+  {% block content %}{% endblock %}
+  </div>
+{% endblock %}
