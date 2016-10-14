@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>MRFP Inc. | Prototype</title>
+        <link rel="stylesheet" href="vendor/foundation.min.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="styles/custom-styles.css"/>
+    </head>
+
+    <body class="app-wrapper ">
+        <header class="main-header">
+        
+          <a href="/" class="main-header__logo main-header__item">Multistate Registration and Filing Portal</a>
+          <a href="/" class="main-header__spacer main-header__item"></a>
+          
+          <a class="main-header__more main-header__item" href="#"><i class="material-icons">more_vert</i></a>
+
+        
+        </header>
+        <main class="main-content">
+        
+
+  <nav class="main-menu">
+    <a href="#" class="main-menu__item"><i class="material-icons">add_circle_outline</i></a>
+    <a href="#" class="main-menu__item"><i class="material-icons">queue</i></a>
+    <a href="#" class="main-menu__item"><i class="material-icons">settings</i></a>
+    <a href="#" class="main-menu__item"><i class="material-icons">account_circle</i></a>
+  </nav>
+
+  <nav class="states-menu">
+    <a href="index.html" class="states-menu__item">Federal <i class="material-icons">arrow_forward</i></a>
+    <a href="#" class="states-menu__item">Missouri <i class="material-icons">arrow_forward </i></a>
+    <a href="#" class="states-menu__item">Florida <i class="material-icons">arrow_forward</i></a>
+    <a href="add-states.html" class="states-menu__item">Add State <i class="material-icons">add</i></a>
+  </nav>
+
+  <div class="main-form">
+  
+<form action="">
+  <section>
+    <div class="row">
+      <div class="column large-12">
+        <h3>Type of Business Entity 
+          <div class="select inline">
+            <select name="" id="">
+              <option value="#">Partnership</option>
+              <option value="#">Corporation</option>
+              <option value="#">Sole Proprietorship</option>
+              <option value="#">Other</option>
+            </select>
+          </div>
+        </h3>
+      </div>
+    </div>
+  
+    <section>
+      <div class="row">
+        <div class="column large-12">
+          <h1>Partnership</h1>
+          <p>(Attach partnership agreement) List partners’ names, positions, phones and home addresses</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column large-6">
+          <div class="row"><div class="column large-12"><h3>Partner Information</h3></div></div>
+          <div class="row"><div class="column large-12"><input type="text" placeholder="Name"></div></div>
+          <div class="row"><div class="column large-12"><input type="text" placeholder="Phone"></div></div>
+          <div class="row"><div class="column large-12"><input type="text" placeholder="Street"></div></div>
+          <div class="row"><div class="column large-12"><input type="text" placeholder="City"></div></div>
+          <div class="row">
+            <div class="column large-6"><input type="text" placeholder="State"></div>
+            <div class="column large-6"><input type="text" placeholder="ZIP"></div>
+          </div>
+        </div>
+        <div class="column large-6">
+          <div class="row"><div class="column large-12"><h3>Partner Information</h3></div></div>
+          <div class="row"><div class="column large-12"><input type="text" placeholder="Name"></div></div>
+          <div class="row"><div class="column large-12"><input type="text" placeholder="Phone"></div></div>
+          <div class="row"><div class="column large-12"><input type="text" placeholder="Street"></div></div>
+          <div class="row"><div class="column large-12"><input type="text" placeholder="City"></div></div>
+          <div class="row">
+            <div class="column large-6"><input type="text" placeholder="State"></div>
+            <div class="column large-6"><input type="text" placeholder="ZIP"></div>
+          </div>
+          <div class="row"><div class="column large-12"><button class="button">Add Partner</button></div></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column large-12">
+          <a href="/index.html" class="button button--highlight flush-leftt">PREVIOUS</a>
+          <a href="/step-3.html" class="button button--highlight flush-right">NEXT</a>
+        </div>
+      </div>
+    </section>
+  </section>
+</form>
+
+
+
+  </div>
+
+        </main>
+
+        <div id="overlay" class="js-overlay"></div>
+        <script src="./vendor/jquery-2.1.4.min.js"></script>
+        <script src="./scripts.js"></script>
+    </body>
+</html>
