@@ -1,6 +1,45 @@
-{% extends '_frame.html' %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>MRFP Inc. | Prototype</title>
+        <link rel="stylesheet" href="vendor/foundation.min.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="styles/custom-styles.css"/>
+    </head>
 
-{% block content %}
+    <body class="app-wrapper ">
+        <header class="main-header">
+        
+          <a href="/" class="main-header__logo main-header__item">MRFP, Inc.</a>
+          <a href="/" class="main-header__spacer main-header__item"></a>
+          
+          <a class="main-header__more main-header__item" href="#"><i class="material-icons">more_vert</i></a>
+
+        
+        </header>
+        <main class="main-content">
+        
+
+  <nav class="main-menu">
+    <a href="#" class="main-menu__item"><i class="material-icons">add_circle_outline</i></a>
+    <a href="#" class="main-menu__item"><i class="material-icons">queue</i></a>
+    <a href="#" class="main-menu__item"><i class="material-icons">settings</i></a>
+    <a href="#" class="main-menu__item"><i class="material-icons">account_circle</i></a>
+  </nav>
+
+  <nav class="states-menu">
+    <a href="#" class="states-menu__item">Federal <i class="material-icons">arrow_forward</i></a>
+    <a href="#" class="states-menu__item">Missouri <i class="material-icons">arrow_forward </i></a>
+    <a href="#" class="states-menu__item">Florida <i class="material-icons">arrow_forward</i></a>
+    <a href="#" class="states-menu__item">Add State <i class="material-icons">add</i></a>
+  </nav>
+
+  <div class="main-form">
+  
 <form action="">
   <section>
     <div class="row">
@@ -220,4 +259,13 @@
 </form>
 
 
-{% endblock %}
+
+  </div>
+
+        </main>
+
+        <div id="overlay" class="js-overlay"></div>
+        <script src="./vendor/jquery-2.1.4.min.js"></script>
+        <script src="./scripts.js"></script>
+    </body>
+</html>
