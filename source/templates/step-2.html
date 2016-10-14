@@ -1,0 +1,64 @@
+{% extends '_frame.html' %}
+
+{% block content %}
+<form action="">
+  <section>
+    <div class="row">
+      <div class="column large-12">
+        <h3>Type of Business Entity 
+          <div class="select inline">
+            <select name="" id="">
+              <option value="#">Partnership</option>
+              <option value="#">Corporation</option>
+              <option value="#">Sole Proprietorship</option>
+              <option value="#">Other</option>
+            </select>
+          </div>
+        </h3>
+      </div>
+    </div>
+  
+    <section>
+      <div class="row">
+        <div class="column large-12">
+          <h1>Partnership</h1>
+          <p>(Attach partnership agreement) List partners’ names, positions, phones and home addresses</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column large-6">
+          <div class="row"><div class="column large-12"><h3>Partner Information</h3></div></div>
+          <div class="row"><div class="column large-12"><input type="text" placeholder="Name"></div></div>
+          <div class="row"><div class="column large-12"><input type="text" placeholder="Phone"></div></div>
+          <div class="row"><div class="column large-12"><input type="text" placeholder="Street"></div></div>
+          <div class="row"><div class="column large-12"><input type="text" placeholder="City"></div></div>
+          <div class="row">
+            <div class="column large-6"><input type="text" placeholder="State"></div>
+            <div class="column large-6"><input type="text" placeholder="ZIP"></div>
+          </div>
+        </div>
+        <div class="column large-6">
+          <div class="row"><div class="column large-12"><h3>Partner Information</h3></div></div>
+          <div class="row"><div class="column large-12"><input type="text" placeholder="Name"></div></div>
+          <div class="row"><div class="column large-12"><input type="text" placeholder="Phone"></div></div>
+          <div class="row"><div class="column large-12"><input type="text" placeholder="Street"></div></div>
+          <div class="row"><div class="column large-12"><input type="text" placeholder="City"></div></div>
+          <div class="row">
+            <div class="column large-6"><input type="text" placeholder="State"></div>
+            <div class="column large-6"><input type="text" placeholder="ZIP"></div>
+          </div>
+          <div class="row"><div class="column large-12"><button class="button">Add Partner</button></div></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column large-12">
+          <a href="/index.html" class="button button--highlight flush-leftt">PREVIOUS</a>
+          <a href="/step-3.html" class="button button--highlight flush-right">NEXT</a>
+        </div>
+      </div>
+    </section>
+  </section>
+</form>
+
+
+{% endblock %}
